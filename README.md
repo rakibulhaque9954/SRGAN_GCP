@@ -37,7 +37,7 @@ Our model is hosted on GCP, taking advantage of its robust and scalable compute 
 ![Homepage Screenshot](path_to_homepage_screenshot.png)
 *Here is the homepage where users start their image upscaling journey.*
 
-![Results Screenshot](path_to_results_screenshot.png)
+![Results Screenshot]((https://github.com/rakibulhaque9954/SRGAN_GCP/blob/8745d1152bd58bc613e2a90a798e28e74a07cc66/screenshots/Screenshot%202023-11-06%20at%2020.30.46.png)
 *The results page displays the original versus the super-resolved images, clearly demonstrating the model's capabilities.*
 
 ## Future Work
