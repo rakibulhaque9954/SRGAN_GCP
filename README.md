@@ -6,7 +6,7 @@ This project leverages a Super-Resolution Generative Adversarial Network (SRGAN)
 ## Model Development
 
 ### Research Paper
-The foundation of our SRGAN model is a respected research paper that provided a novel approach to super-resolution.
+The foundation of our SRGAN model is a respected research [paper](https://arxiv.org/pdf/1609.04802.pdf) that provided a novel approach to super-resolution.
 
 ### Training Data
 We employed the "mirflickr" dataset for training, starting with 12,500 images and later incorporating an additional 12,500 images for comprehensive learning.
@@ -15,7 +15,8 @@ We employed the "mirflickr" dataset for training, starting with 12,500 images an
 Training was executed over 9 epochs across 3 days initially, followed by a secondary phase using the expanded dataset, resulting in improved performance and a higher PSNR value.
 
 ### Results
-The extended training with the enriched dataset culminated in a PSNR of 29.35, a testament to the model's enhanced super-resolution capabilities.
+The extended training with the enriched dataset culminated in a PSNR of **29.35**, a testament to the model's enhanced super-resolution capabilities.
+Here is the notebook [repository](https://github.com/rakibulhaque9954/SRGAN-from-scratch/blob/7ec72b1dd694e2b90e24d6ec8ff885cf8eb35c22/SRGAN_from_scratch.ipynb).
 
 ## Website and API Interface Using Flask
 
