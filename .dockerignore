@@ -13,3 +13,4 @@ Procfile
 requirements-render.txt
 static
 .gitignore
+screenshots
