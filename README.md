@@ -17,7 +17,7 @@ Training was executed over 9 epochs across 3 days initially, followed by a secon
 
 ### Results
 The extended training with the enriched dataset culminated in a PSNR of **29.35**, a testament to the model's enhanced super-resolution capabilities.
-Here is the notebook [repository](https://github.com/rakibulhaque9954/SRGAN-from-scratch/blob/fffecf5bc62bccb0156b501a800b7d7e1ff666f3/README.md).
+Here is the notebook [repository](https://github.com/rakibulhaque9954/SRGAN-from-scratch.git).
 
 ## Website and API Interface Using Flask
 
