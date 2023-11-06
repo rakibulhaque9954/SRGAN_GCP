@@ -16,7 +16,7 @@
 
 ### 結果
 拡張されたデータセットでのトレーニングを経て、PSNRは**29.35**に達し、モデルの向上したスーパーレゾリューション能力を証明しました。
-こちらがノートブックの[リポジトリ](https://github.com/rakibulhaque9954/SRGAN-from-scratch/blob/7ec72b1dd694e2b90e24d6ec8ff885cf8eb35c22/SRGAN_from_scratch.ipynb)です。
+こちらがノートブックの[リポジトリ](https://github.com/rakibulhaque9954/SRGAN-from-scratch.git)です。
 
 ## Flaskを使用したウェブサイトとAPIインターフェース
 
