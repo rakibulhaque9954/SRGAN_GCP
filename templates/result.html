@@ -70,7 +70,7 @@
                 <h5>Enhanced Image</h5>
                 <img src="{{ generated_image }}" alt="Enhanced Image" class="img-fluid">
                 <p class="disclaimer">Observe the clear details and improved resolution post-enhancement.</p>
-                <a href="{{ enhanced_download }}" class="btn btn-custom">Download Enhanced Image</a>
+                <a href="{{ generated_image }}" download="Enhanced_Image.jpg" class="btn btn-custom">Download Enhanced Image</a>
             </div>
         </div>
     </div>
@@ -78,6 +78,7 @@
         <a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">Try Another Image</a>
     </div>
 </div>
+
 <!-- Optional JavaScript and Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

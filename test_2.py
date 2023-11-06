@@ -5,7 +5,7 @@ from flask import Flask, jsonify, request
 from io import BytesIO
 import io
 
-generator = load_model('gen25000v3.1.h5')
+generator = load_model('gen25000v2.4.h5')
 
 
 # generator.summary()

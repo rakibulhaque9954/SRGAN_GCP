@@ -9,3 +9,7 @@ __pycache__
 test
 main.py
 front_end.py
+Procfile
+requirements-render.txt
+static
+.gitignore
