@@ -70,6 +70,13 @@
             <label for="file">Select image to enhance:</label>
             <input type="file" class="form-control-file" id="file" name="file" required>
           </div>
+           <div class="default-image-card">
+         <h5>Try Our Default Example Image</h5>
+  <img src="static/uploads/test_img.jpeg" alt="Default Image" class="img-thumbnail">
+    <br>
+     <a href="{{ url_for('test_image') }}" class="btn btn-info mt-3">Test with Default Image</a>
+</div>
+
           <button type="submit" class="btn btn-primary btn-block mt-4">Upload & Enhance</button>
         </form>
       </div>
