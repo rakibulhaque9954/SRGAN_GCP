@@ -1,4 +1,5 @@
 # Super-Resolution GAN (SRGAN) Project
+[日本語]
 
 ## Introduction
 This project leverages a Super-Resolution Generative Adversarial Network (SRGAN) to enhance image quality, built upon innovative research. Through our web platform, users can upscale images with ease, powered by our Flask-driven interface and back-end services.
