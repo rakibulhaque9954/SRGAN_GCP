@@ -34,31 +34,48 @@
         .header {
             padding: 20px 0;
         }
+        .alert-custom {
+            color: #856404;
+            background-color: #fff3cd;
+            border-color: #ffeeba;
+        }
+        .disclaimer {
+            color: #dc3545;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
 <div class="container">
     <div class="header text-center">
         <h2>SRGAN Image Enhancement Results</h2>
-        <p>Check the difference between the original and the enhanced images.</p>
+        <p>Discover the remarkable transformation from original to enhanced imagery with our SRGAN technology.</p>
+    </div>
+    <div class="alert alert-warning" role="alert">
+        <strong>Heads up!</strong> For optimal enhancement, use images that are 64x64 pixels in size. Larger low-resolution images will be resized to 256x256 pixels which may affect the quality of the enhancement.
+    </div>
+    <div class="alert alert-custom" role="alert">
+        <strong>Note:</strong> This is not a commercial-grade solution, and the results may have limitations. Perfect enhancement is not guaranteed, especially for images with complex textures or patterns.
     </div>
     <div class="row">
         <div class="col-md-6">
             <div class="image-card text-center">
                 <h5>Original Image</h5>
                 <img src="{{ original_image }}" alt="Original Image" class="img-fluid">
+                <p class="disclaimer">The starting point of our enhancement journey.</p>
             </div>
         </div>
         <div class="col-md-6">
             <div class="image-card text-center">
                 <h5>Enhanced Image</h5>
                 <img src="{{ generated_image }}" alt="Enhanced Image" class="img-fluid">
-                <a href="{{ generated_image }}" download class="btn btn-custom">Download Enhanced</a>
+                <p class="disclaimer">Observe the clear details and improved resolution post-enhancement.</p>
+                <a href="{{ enhanced_download }}" class="btn btn-custom">Download Enhanced Image</a>
             </div>
         </div>
     </div>
     <div class="text-center">
-        <a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">Go Back</a>
+        <a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">Try Another Image</a>
     </div>
 </div>
 <!-- Optional JavaScript and Bootstrap JS -->

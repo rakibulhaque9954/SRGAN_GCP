@@ -6,24 +6,75 @@
   <title>Image Upload with SRGAN</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS for animations -->
+  <style>
+    body {
+      background: #f7f7f7;
+    }
+    .container {
+      animation: fadeIn 1s;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translatey(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translatey(0);
+      }
+    }
+    .alert {
+      animation: slideIn 1s backwards;
+    }
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    .form-container {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .btn-primary {
+      background-color: #0056b3;
+      border: none;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.2s;
+    }
+    .btn-primary:hover {
+      background-color: #003d82;
+    }
+  </style>
 </head>
 <body>
   <div class="container mt-5">
-    <h1 class="text-center">Upload image to Enhance</h1>
+    <h1 class="text-center mb-4">Upload Your Image</h1>
+    <div class="alert alert-info" role="alert">
+      <h4 class="alert-heading">Please Note:</h4>
+      <p>This image enhancement model currently produces black and white images and works optimally with 64x64 pixel low-quality images, enhancing them to 256x256 pixels.</p>
+      <hr>
+      <p class="mb-0">Original color images will result in black and white enhanced images.</p>
+    </div>
     <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <form action="/" method="post" enctype="multipart/form-data" class="border p-3 mt-3">
+      <div class="col-md-6 offset-md-3 form-container">
+        <form action="/" method="post" enctype="multipart/form-data">
           <div class="form-group">
-            <label for="file">Choose an image:</label>
+            <label for="file">Select image to enhance:</label>
             <input type="file" class="form-control-file" id="file" name="file" required>
           </div>
-          <button type="submit" class="btn btn-primary btn-block">Upload & Enhance</button>
+          <button type="submit" class="btn btn-primary btn-block mt-4">Upload & Enhance</button>
         </form>
       </div>
     </div>
   </div>
-
-  <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
