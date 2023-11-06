@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRGAN Results</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f7f7f7;
+        }
+        .image-card {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        .image-card img {
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .btn-custom {
+            color: #fff;
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+        .btn-custom:hover {
+            color: #fff;
+            background-color: #138496;
+            border-color: #117a8b;
+        }
+        .header {
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header text-center">
+        <h2>SRGAN Image Enhancement Results</h2>
+        <p>Check the difference between the original and the enhanced images.</p>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="image-card text-center">
+                <h5>Original Image</h5>
+                <img src="{{ original_image }}" alt="Original Image" class="img-fluid">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="image-card text-center">
+                <h5>Enhanced Image</h5>
+                <img src="{{ generated_image }}" alt="Enhanced Image" class="img-fluid">
+                <a href="{{ generated_image }}" download class="btn btn-custom">Download Enhanced</a>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">Go Back</a>
+    </div>
+</div>
+<!-- Optional JavaScript and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

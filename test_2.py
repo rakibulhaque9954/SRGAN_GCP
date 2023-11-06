@@ -36,7 +36,10 @@ def predict(img_lr):
     # Convert the output to image (if needed, depends on your generator's output)
     # gen_img = Image.fromarray((gen_img[0] * 255).astype(np.uint8))
     # gen_img.show()
-    return gen_img.shape
+    gen_img_list = gen_img.tolist()
+
+    # Return as a JSON response
+    return gen_img_list
 
 
 app = Flask(__name__)
@@ -52,8 +55,9 @@ def index():
         try:
             img_lr = restructure_img(file)
             prediction = predict(img_lr)
-            data = {'Prediction': prediction}
-            return jsonify(data)
+            return jsonify({
+        'Prediction Tensor': prediction
+    })
         except Exception as e:
             return jsonify({'error': str(e)})
     return 'OK'
