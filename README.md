@@ -34,10 +34,10 @@ Our model is hosted on GCP, taking advantage of its robust and scalable compute 
 ## Results and Website Interface
 
 ### Website Screenshots
-![Homepage Screenshot](path_to_homepage_screenshot.png)
+![Homepage Screenshot](https://github.com/rakibulhaque9954/SRGAN_GCP/blob/91bd6a11730ba5ff5a873a27582613c1fd318dfd/screenshots/Screenshot%202023-11-06%20at%2020.31.00.png)
 *Here is the homepage where users start their image upscaling journey.*
 
-![Results Screenshot]((https://github.com/rakibulhaque9954/SRGAN_GCP/blob/8745d1152bd58bc613e2a90a798e28e74a07cc66/screenshots/Screenshot%202023-11-06%20at%2020.30.46.png)
+![Results Screenshot](https://github.com/rakibulhaque9954/SRGAN_GCP/blob/8745d1152bd58bc613e2a90a798e28e74a07cc66/screenshots/Screenshot%202023-11-06%20at%2020.30.46.png)
 *The results page displays the original versus the super-resolved images, clearly demonstrating the model's capabilities.*
 
 ## Future Work
@@ -50,4 +50,4 @@ Its pretty simple upload an image with size presumably of 64 x 64 pixels and the
 We welcome contributions from the community. Whether it's feature enhancements, bug fixes, or improvements to the code, we value your input.
 
 ## License
-This project is made available under the [MIT License](LICENSE.md).
+This project is made available under the [MIT License](https://github.com/rakibulhaque9954/blog_remastered/blob/a5e57fac46833fdcb26c28980d8f6b07980b0379/MIT_LICENSE_Rakibul_Haque.txt).
